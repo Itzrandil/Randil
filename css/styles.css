@@ -1,0 +1,281 @@
+.logo {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.logo img {
+    width: 60%;
+    margin-left: 20%;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    background: #000000;
+    transition: width 0.5s;
+    z-index: 1;
+}
+.nav ul {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.nav ul li {
+    position: relative;
+    list-style: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.nav .list1.active a {
+    color: #000000;
+    background: #ffffff;
+}
+.nav ul li:not(.active):hover a {
+    background-color: #3333334d;
+    transition: background-color 0.3s ease;
+}
+.nav ul li a {
+    position: relative;
+    text-align: center;
+    display: block;
+    width: 95%;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+.nav ul li a .navTitle {
+    position: relative;
+    font-size: 13px;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
+#sub_chck {
+    display: none;
+}
+.nav ul li.products {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.nav ul li.products a {
+    cursor: pointer;
+}
+.nav ul li.products ul.sub_menu1 {
+    display: none;
+    height: auto;
+    width: 230px;
+    padding: 5px 0;
+    flex-direction: column;
+}
+#sub_chck:checked ~ li.products:not(.active) a {
+    background-color: #3333334d;
+    color: #fff;
+}
+#sub_chck:checked ~ li.products ul.sub_menu1 {
+    display: flex;
+}
+#sub_chck:checked ~ li.products ul.sub_menu1 li a {
+    background-color: #3333334d;
+    color: #fff;
+}
+.nav ul li.products ul.sub_menu1 li {
+    margin-left: 20px;
+    display: flex;
+}
+.nav ul li.products ul.sub_menu1 li.active a {
+    background-color: #fff;
+    color: #000;
+}
+.nav ul li.products ul.sub_menu1 li:hover a {
+    background-color: #fff!important;
+    color: #000!important;
+    transition: all 0.3s ease;
+}
+#sub_list {
+    width: 120%;
+}
+.footer {
+    position: relative;
+    left: 25%;
+    height: 10%;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0px;
+    width: 65%;
+}
+.footercontent {
+    justify-content: space-evenly;
+    display: flex;
+    width: 110%;
+    padding-top: 10px;
+}
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+    background-color: #fff;
+}
+.medialogos {
+    display: flex;
+    justify-content: space-evenly;
+}
+#fabooklogo {
+    width: 65%;
+    transition: 0.5s;
+}
+#fabooklogo:hover, #instalogo:hover, #whstapplogo:hover {
+    width: 68%;
+}
+h1 {
+    text-align: center;
+    padding-top: 10%;
+    font-size: xx-large;
+}
+#bgimgsec {
+    padding-left: 20%;
+}
+#instalogo {
+    position: relative;
+    top: 10%;
+    width: 60%;
+    transition: 0.5s;
+}
+#whstapplogo {
+    width: 65%;
+    position: relative;
+    bottom: 10%;
+    transition: 0.5s;
+}
+#emaillogo {
+    width: 50%;
+    position: relative;
+    right: 25%;
+    top: 5%;
+    transition: 0.5s;
+}
+#emaillogo:hover {
+    width: 55%;
+}
+.docs ol, li {
+    margin-top: 0%;
+}
+.docs li {
+    list-style: lower-roman;
+}
+
+@media screen and (max-width: 1600px) {
+    #bgimgsec {
+        padding-left: 21%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .nav ul {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+    }
+    .nav ul li {
+        margin-top: 5px;
+    }
+    .nav ul li a {
+        width: 100%;
+        text-align: left;
+        padding-left: 15px;
+    }
+    .nav ul li a .navTitle {
+        font-size: 16px;
+        line-height: 50px;
+        height: 50px;
+    }
+    #sub_chck:checked ~ li.products ul.sub_menu1 {
+        width: 100%;
+    }
+    .footer {
+        left: 0;
+        width: 100%;
+    }
+    .footercontent {
+        width: 100%;
+    }
+    #bgimgsec {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    h1 {
+        padding-top: 5%;
+    }
+}
+
+/* Styles for Dairy, Cosmetics, and Vegetables sections */
+.paras {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.paras h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#subparas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#subparas p {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#subparas a {
+    display: block;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+#subparas img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Hover effect for the images */
+#subparas a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #subparas {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #subparas p {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #subparas img {
+        max-width: 80%;
+    }
+}
+

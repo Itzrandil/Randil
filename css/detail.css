@@ -1,0 +1,196 @@
+/* detail.css */
+
+/* Background Image Section */
+.bgimg1 {
+    background: linear-gradient(#d0efe5 50px, rgba(255, 255, 255, 0.6), rgba(32, 32, 32, 0.5)), url(../imgs/order.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+    border-radius: 45px;
+    position: relative;
+}
+
+/* Categories Section */
+.categories {
+    margin-top: 3%;
+    margin-left: 44%;
+    display: grid;
+    grid-template-columns: 60% 50%;
+}
+
+/* Footer */
+.footer {
+    margin-top: 3%;
+}
+
+/* Fieldset Styling */
+.categories fieldset {
+    margin: 2%;
+    padding: 2%;
+    border-radius: 30px;
+    background-color: rgba(51, 51, 51, 0.3); /* Adjusted for a softer appearance */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+    border-style: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.categories legend {
+    font-size: larger;
+    padding-top: 30px;
+    text-shadow: #040404 1px 1px 1px;
+    text-decoration: underline;
+}
+
+/* Button Styling */
+#clearBtn, #orderNowbtn, #checkOut {
+    width: 30%;
+    border-radius: 15px; /* Increased border-radius for a more modern look */
+    cursor: pointer;
+    background-color: #205c00;
+    transition: 0.5s ease, transform 0.3s ease; /* Added transform transition */
+    padding: 10px; /* Increased padding for better spacing */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+#clearBtn:hover, #orderNowbtn:hover, #checkOut:hover {
+    background-color: #2ee007;
+    transform: scale(1.05); /* Added hover scale effect */
+}
+
+#checkOut {
+    width: 30%;
+}
+
+/* Input and Select Fields */
+select, input {
+    border-radius: 15px; /* Increased border-radius for a smoother look */
+    padding: 10px 15px; /* Increased padding for better spacing */
+    margin: 5px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+    border: 1px solid #ccc; /* Added border */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+select:hover, input:hover {
+    border-color: #205c00;
+    box-shadow: 0px 0px 5px rgba(32, 92, 0, 0.5); /* Added hover effect */
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .bgimg1 {
+        height: 35%;
+        border-radius: 30px;
+    }
+
+    .categories {
+        margin-left: 10%;
+        grid-template-columns: 100%;
+    }
+
+    .categories fieldset {
+        width: 80%;
+        margin: 5% auto;
+    }
+
+    .footer {
+        margin-top: 4%;
+    }
+
+    #clearBtn, #orderNowbtn, #checkOut {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        padding-top: 8%;
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bgimg1 {
+        height: 30%;
+        border-radius: 20px;
+    }
+
+    .categories, .customerInfo {
+        margin-left: 5%;
+        grid-template-columns: 100%;
+    }
+
+    .categories fieldset, .customerInfo fieldset {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .footer {
+        margin-top: 5%;
+    }
+
+    #clearBtn, #orderNowbtn, #checkOut {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        padding-top: 10%;
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bgimg1 {
+        height: 25%;
+        border-radius: 10px;
+    }
+
+    .categories, .customerInfo {
+        margin-left: 2%;
+        grid-template-columns: 100%;
+    }
+
+    .categories fieldset, .customerInfo fieldset {
+        width: 95%;
+        margin: 5% auto;
+    }
+
+    .footer {
+        margin-top: 6%;
+    }
+
+    #clearBtn, #orderNowbtn, #checkOut {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    h1 {
+        padding-top: 15%;
+        font-size: medium;
+    }
+}

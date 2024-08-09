@@ -1,0 +1,83 @@
+.loyalty-program {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loyalty-program h2 {
+    font-size: 36px;
+    color: #3C0753;
+    margin-bottom: 10px;
+}
+
+.loyalty-program p, .loyalty-program ul, .loyalty-program h3, .loyalty-program form {
+    margin-bottom: 20px;
+}
+
+.loyalty-program ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.loyalty-program ul li {
+    margin-bottom: 10px;
+}
+
+.loyalty-program form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.loyalty-program form input[type="text"],
+.loyalty-program form input[type="email"],
+.loyalty-program form input[type="tel"],
+.loyalty-program form input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.loyalty-program form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.loyalty-program form input[type="submit"] {
+    background-color: #3C0753;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.loyalty-program form input[type="submit"]:hover {
+    background-color: #962e77;
+}
+
+.loyalty-icon {
+    width: 200px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.loyalty-details {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 70px); 
+}
+
+.loyalty-scheme {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    text-align: center; /* Center align the h2 element */
+    margin-bottom: 10px;
+    margin-left: 15%;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 1rem;
+}
+
+.productItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Styling for individual product items */
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 280px;
+    padding: 20px;
+    border: 2px solid #0e0e0d;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+    max-width: 100%;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 17%;
+}
+
+.add-to-cart-btn {
+    background-color: #077e09;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button {
+    background-color: #1f6e21;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0ced17;
+}
+
+table {
+    width: 70%;
+    margin-left: 20%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+th, td {
+    padding: 0.25rem;
+    text-align: center;
+    border-bottom: 2px solid #0f0f0f;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+.buyNowbtn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #077e09;
+    color: #ffffff;
+    border: none;
+    border-radius: 1px;
+    padding: 6.5px 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 51%;
+    width: 6%;
+}
+
+.buyNowbtn:hover {
+    background-color: #0ced17;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    h2 {
+        margin-left: 5%;
+        font-size: 1.5rem;
+    }
+
+    .product-section {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .product-item {
+        width: 200px;
+        height: 240px;
+    }
+
+    table {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .buyNowbtn {
+        margin-left: 45%;
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        margin-left: 0;
+        font-size: 1.25rem;
+    }
+
+    .product-section {
+        margin-left: 5%;
+        margin-right: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        width: 180px;
+        height: 220px;
+    }
+
+    table {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .buyNowbtn {
+        margin-left: 40%;
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .product-section {
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        width: 160px;
+        height: 200px;
+        margin: 15px;
+    }
+
+    .product-item img {
+        max-height: 100px;
+    }
+
+    table {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .buyNowbtn {
+        margin-left: 35%;
+        width: 20%;
+    }
+}
